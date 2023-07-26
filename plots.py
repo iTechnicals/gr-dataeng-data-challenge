@@ -101,12 +101,12 @@ fig, ax = plt.subplots()
 # moving_average_std_plot(14)
 
 # standard_plot(['Bitcoin'])
-moving_average_plot(20)
+# moving_average_plot(20)
 
 # fig.set_facecolor('#3E4C57')
 # ax.set_facecolor('#607687')
 
-# bollinger(20, "#00CCCC", "#007D7D", ['Bitcoin'])
+bollinger(20, "#00CCCC", "#007D7D", ['Bitcoin'])
 
 plt.legend()
 plt.grid()

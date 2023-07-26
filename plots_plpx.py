@@ -1,6 +1,5 @@
 import numpy as np
 import polars as pl
-import pandas as pd
 import plotly.express as px
 
 df = pl.read_csv('data/crypto.csv', try_parse_dates=True)
@@ -53,7 +52,7 @@ def bollinger(period, currencies = None):
 
 # log_plot()
 
-stdev_plot().show()
+# stdev_plot().show()
 # moving_average_std_plot(14)
 
 # standard_plot().show()
@@ -62,4 +61,4 @@ stdev_plot().show()
 # fig.set_facecolor('#3E4C57')
 # ax.set_facecolor('#607687')
 
-# bollinger(20, ['Bitcoin', 'Ethereum']).show()
+bollinger(20, ['Bitcoin']).show()
